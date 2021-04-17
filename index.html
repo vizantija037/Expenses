@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <h1>Expenses List</h1>
+    <h2>Add to list</h2>
+    <div class="main-container" id="mainContainer">
+    
+        <div class="input-container">
+            <div class="nameDiv">
+                <label for="item" id="labelEvery">Item:</label>
+                <input form="text-input" id="name-input"  type="text">
+            </div>
+            
+            <div class="costDiv">
+                <label for="item" id="labelEvery">Cost:</label>
+                <input form="text-input" id="cost-input" type="number" min="1" max="1000" onfocus=this.value="">
+            </div>
+            
+            <div class="dateDiv">    
+                <label for="item" id="labelEvery">Date:</label>
+                <input type="date" id="date-input" name="current-date">
+                </div>
+            <div class="submitDiv">
+                <p><button type="submit" id="submit-btn" >Submit</button></p>
+            </div>
+        </div>
+        
+        <div class="tableDiv">
+        <table id="table-list">
+            <tr id="table-heading">
+            <th>Item name</th>
+            <th>Cost  (EUR)</th> 
+            <th>Adding date</th>
+            <th>Remove from list</th>
+            </tr>
+            
+        </table>
+        </div>    
+        <div class="total" id="total">TOTAL : 
+        </div>
+ 
+
+        
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
